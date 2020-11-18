@@ -25,9 +25,10 @@ import org.testng.annotations.BeforeMethod;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.vendantu.util.CommonHelperMethods;
-import com.vendantu.util.Constants;
-import com.vendantu.util.ExtentManager;
+import com.vendantu.common.util.CommonHelperMethods;
+import com.vendantu.common.util.Constants;
+import com.vendantu.common.util.DataManager;
+import com.vendantu.common.util.ExtentManager;
 
 public class UiBaseSetup {
 
@@ -156,7 +157,7 @@ public class UiBaseSetup {
 	public WebDriver testEnvironmentSetUp() {
 		driver = openBrowser(Constants.BROWSER_TYPE);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(Constants.VEDANTU_URL);
+		driver.get(DataManager.getInstance().getBaseUrl());
 		log.info("Setup is done, Going to start Test Execution");
 		return driver;
 	}

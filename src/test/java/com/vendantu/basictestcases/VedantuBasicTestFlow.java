@@ -8,10 +8,10 @@ import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.vendantu.base.UiBaseSetup;
+import com.vendantu.common.util.CommonUtils;
 import com.vendantu.pageobjects.DifferentSectionPage;
 import com.vendantu.pageobjects.ExamSummaryPage;
 import com.vendantu.pageobjects.InstructionPage;
-import com.vendantu.util.CommonUtils;
 
 public class VedantuBasicTestFlow extends UiBaseSetup {
 

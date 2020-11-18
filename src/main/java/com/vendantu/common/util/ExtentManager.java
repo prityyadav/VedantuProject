@@ -1,4 +1,4 @@
-package com.vendantu.util;
+package com.vendantu.common.util;
 
 import java.io.File;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.vendantu.util;
+package com.vendantu.common.util;
 
 public class Constants {
 
@@ -18,7 +18,6 @@ public class Constants {
 	// public static String BROWSER_TYPE = "Mozilla"; /* For running the test cases
 	// on Mozilla Browser*/
 	public static String BROWSER_TYPE = "Chrome"; /* For running the test cases on Chrome Browser */
-	public static String VEDANTU_URL = "https://www.vedantu.com/test/PUBLIC/5f8eb7b9dae9893894b0c034";
 
 	/* Extent Report Properties */
 	public static String ALL_REPORTS_PATH = System.getProperty("user.dir") + "/report/";
